@@ -16,3 +16,10 @@ open bellow code within ```script``` tag
 ```
 $("NULL").init($("NULL").randomNuml());
 ```
+That will create a variable ```string``` containing the random generated paragraph.
+Now to add the generated text inside a div anywhere in your website, simply create a div with an ```id```
+and the write the bellow code
+```
+$("ep").add();
+```
+where ```ep``` will be you div ```id```
