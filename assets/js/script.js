@@ -22,7 +22,7 @@ const rnd = [
 ];
 const rd = [4, 5, 3, 6];
 let d = ["Muhiyj"];
-let r = "";
+let string = "";
 //insert random word in array
 function g() {
   for (let i = 1; i < 5000; i++) {
@@ -57,9 +57,9 @@ function $(e) {
     },
     s: function (word) {
       for (let i = 0; i < word; i++) {
-        r += this.rd() + " ";
+        string += this.rd() + " ";
       }
-      r += ".";
+      string += ".";
     },
     createSentence: function (n) {
       for (let i = 0; i < n; i++) {
@@ -68,22 +68,15 @@ function $(e) {
     },
     sp: function () {
       this.createSentence(this.randNum());
-      r += "<br><br>";
+      string += "<br><br>";
     },
-    tp: function (n) {
+    init: function (n) {
       for (let i = 0; i < n; i++) {
         this.sp();
       }
     },
   };
   return obj;
-}
-$("n").tp($("n").randomNuml());
-document.getElementById("ep").innerHTML = r;
-function regerate() {
-    r='';
-  $("n").tp($("n").randomNuml());
-  document.getElementById("ep").innerHTML = r;
 }
 function CopyToClipboard(containerid) {
     if (document.selection) {
