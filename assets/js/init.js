@@ -1,4 +1,4 @@
-$("NULL").init($("NULL").randomNuml());
+$("NULL").init();
 document.getElementById("ep").innerHTML = string;
 function regerate() {
     string='';
