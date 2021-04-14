@@ -23,6 +23,7 @@ and the write the bellow code
 $("ep").add();
 ```
 where ```ep``` will be you div ```id```
+
 For generating random text each time you click a button simply initialize ```string``` as NULL for each time
 ```
 string='';
