@@ -10,3 +10,4 @@ Head to
 ```
 assets/js/
 ```
+Download ```script.js```
