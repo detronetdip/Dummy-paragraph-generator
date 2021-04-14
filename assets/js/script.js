@@ -70,7 +70,8 @@ function $(e) {
       this.createSentence(this.randNum());
       string += "<br><br>";
     },
-    init: function (n) {
+    init: function () {
+      let n=this.randomNuml();
       for (let i = 0; i < n; i++) {
         this.sp();
       }
