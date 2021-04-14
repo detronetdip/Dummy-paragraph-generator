@@ -12,7 +12,7 @@ assets/js/
 ```
 Download ```script.js```
 Add our library file inside your ```head``` tag, now before closing ```body``` tag
-open bellow code within ```script``` tag
+write bellow code within ```script``` tag
 ```
 $("NULL").init($("NULL").randomNuml());
 ```
@@ -23,3 +23,7 @@ and the write the bellow code
 $("ep").add();
 ```
 where ```ep``` will be you div ```id```
+For generating random text each time you click a button simply initialize ```string``` as NULL for each time
+```
+string='';
+```
