@@ -11,3 +11,8 @@ Head to
 assets/js/
 ```
 Download ```script.js```
+Add our library file inside your ```head``` tag, now before closing ```body``` tag
+open bellow code within ```script``` tag
+```
+$("NULL").init($("NULL").randomNuml());
+```
