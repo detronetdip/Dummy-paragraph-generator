@@ -76,23 +76,13 @@ function $(e) {
         this.sp();
       }
     },
+    add:function(e){
+      document.getElementById(this.id).innerHTML=string
+    },
+    regenerate:function(){
+      string='';
+      this.init();
+    }
   };
   return obj;
 }
-function CopyToClipboard(containerid) {
-    if (document.selection) {
-      var range = document.body.createTextRange();
-      range.moveToElementText(document.getElementById(containerid));
-      range.select().createTextRange();
-      document.execCommand("copy");
-    } else if (window.getSelection) {
-      var range = document.createRange();
-      range.selectNode(document.getElementById(containerid));
-      window.getSelection().addRange(range);
-      document.execCommand("copy");
-      document.getElementById('msg').innerHTML='Text coppied.';
-      setTimeout(() => {
-        document.getElementById('msg').innerHTML='';
-      }, 5000);
-    }
-  }
