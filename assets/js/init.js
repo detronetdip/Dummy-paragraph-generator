@@ -1,7 +1,23 @@
 $("NULL").init();
-document.getElementById("ep").innerHTML = string;
+$("ep").add();
 function regerate() {
-    string='';
-  $("NULL").init($("NULL").randomNuml());
-  document.getElementById("ep").innerHTML = string;
+  $("NULL").regenerate();
+  $("ep").add();
 }
+function CopyToClipboard(containerid) {
+    if (document.selection) {
+      var range = document.body.createTextRange();
+      range.moveToElementText(document.getElementById(containerid));
+      range.select().createTextRange();
+      document.execCommand("copy");
+    } else if (window.getSelection) {
+      var range = document.createRange();
+      range.selectNode(document.getElementById(containerid));
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      document.getElementById('msg').innerHTML='Text coppied.';
+      setTimeout(() => {
+        document.getElementById('msg').innerHTML='';
+      }, 5000);
+    }
+  }
