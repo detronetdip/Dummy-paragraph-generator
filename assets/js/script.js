@@ -23,14 +23,12 @@ const rnd = [
 const rd = [4, 5, 3, 6];
 let d = ["Muhiyj"];
 let string = "";
-//insert random word in array
 function g() {
   for (let i = 1; i < 5000; i++) {
     d[i] = $("NULL").getword($("NULL").randomNuml());
   }
 }
 g();
-//control function
 function $(e) {
   let obj = {
     id: e,
