@@ -14,7 +14,7 @@ Download ```script.js```
 Add our library file inside your ```head``` tag, now before closing ```body``` tag
 write bellow code within ```script``` tag
 ```
-$("NULL").init($("NULL").randomNuml());
+$("NULL").init();
 ```
 That will create a variable ```string``` containing the random generated paragraph.
 Now to add the generated text inside a div anywhere in your website, simply create a div with an ```id```
